@@ -1,14 +1,16 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Link from "next/link";
-import { NavLink } from "@mantine/core";
+import {IconArrowNarrowRight} from '@tabler/icons-react'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-         <NavLink
-          href="/table"
-          label="See Table"/>
-    </main>
-  );
+export default function Home({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+    return (
+      <Link href='/table'className={styles.link}> 
+        Go to Result 
+        <IconArrowNarrowRight size={'2rem'}/>
+      </Link>
+    );
 }

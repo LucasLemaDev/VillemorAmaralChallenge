@@ -1,0 +1,12 @@
+.link{
+  color: #d8c1a7;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-Size: 2rem;
+  font-Weight: bold;
+  &:hover {
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.747);
+      color: #ffffff;
+    }
+}
