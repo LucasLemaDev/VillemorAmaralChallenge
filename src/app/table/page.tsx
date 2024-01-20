@@ -42,7 +42,7 @@ const TableData: React.FunctionComponent<ITableDataProps> = (props) => {
             data ? data.map( (item , index) => (
                <Table.Tr key={index}>
                   <Table.Td>{item.processNumber}</Table.Td>
-                  <Table.Td>{item.date}</Table.Td>
+                  <Table.Td>{item.date.slice(0, -11)}</Table.Td>
                   <Table.Td>{item.date.slice(10)}</Table.Td>
                   <Table.Td>{item.court}</Table.Td>
                   <Table.Td>{item.correspondent}</Table.Td>
