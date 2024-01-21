@@ -4,7 +4,7 @@
   margin: 0;
 }
 header a:hover{
-  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.664);
+  color: var(--mantine-color-yellow-3);
 }
 
 a {

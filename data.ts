@@ -1,4 +1,4 @@
-[
+export const hearings = [
     {
         "processNumber": "5685982-28.2023.8.192198",
         "date": "1/19/2024 9:22:12 PM",
