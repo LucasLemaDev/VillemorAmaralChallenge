@@ -120,3 +120,32 @@ export const hearings = [
         "correspondent": "Michael Spinka"
     }
 ]
+
+export const initialGroups =[ 
+    {
+      name: 'work', 
+      color:'#' + Math.floor(Math.random()*16777215).toString(16),
+      processList: [
+        '5685982-28.2023.8.192198',
+        '3763216-35.2023.8.196599',
+        '6705024-31.2023.8.196568'
+      ]
+    },
+    {
+      name: 'heritage', 
+      color:'#' + Math.floor(Math.random()*16777215).toString(16),
+      processList: [
+        '5685982-28.2023.8.192198',
+        '2376891-25.2023.8.196409',
+        '4379152-43.2023.8.198211'
+      ]
+    },
+    {
+      name: 'business', 
+      color:'#' + Math.floor(Math.random()*16777215).toString(16)
+    },
+    {
+      name: 'criminal', 
+      color:'#' + Math.floor(Math.random()*16777215).toString(16)
+    },
+  ]

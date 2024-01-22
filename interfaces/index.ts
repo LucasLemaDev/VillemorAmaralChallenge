@@ -8,3 +8,9 @@ export type Hearing = {
  export type ResponseError = {
    message: string;
  };
+
+ export type ProcessGroup = {
+  name: string,
+  color: string,
+  processList?: string[]
+};
