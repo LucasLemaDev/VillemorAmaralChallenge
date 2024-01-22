@@ -1,19 +1,30 @@
 import '@mantine/core/styles.css';
-import type { Metadata } from "next";
-import { ColorSchemeScript, MantineProvider, Stack } from '@mantine/core';
-import "./globals.css";
+import "./globals.scss";
 import Link from 'next/link';
+import { ColorSchemeScript, MantineProvider, Stack } from '@mantine/core';
+import type { Metadata } from "next";
+import { Titillium_Web } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'Villemor Amaral Challenge',
   description: 'An test given from Villemor Amaral admission team',
 };
 
+const titilliumWeb = Titillium_Web({
+  weight: '300',
+  style: 'normal',
+  subsets: ['latin']
+})
+
+const theme = {
+  fontFamily: titilliumWeb.style.fontFamily
+}
+
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+    children,
+  }: {
+    children: React.ReactNode;
+  }) {
 
   return (
     <html lang="en">
@@ -22,10 +33,10 @@ export default function RootLayout({
       </head>
       
       <body>
-        <MantineProvider defaultColorScheme='dark'>
-          <Stack align='center' h={'100vh'} >
-            <header style={{padding: '1rem', fontSize: '2rem'}}>
-              <h1 style={{textAlign: 'center'}}><Link href={'/'} >Villemor Amaral Challenge</Link></h1>
+        <MantineProvider defaultColorScheme='auto' theme={theme}>
+          <Stack align='center' h='100vh' gap={'2rem'}>
+            <header className='header'>
+              <h1><Link href={'/'} >Villemor Amaral <br/><div>Challenge</div></Link></h1>
             </header>
 
             {children}

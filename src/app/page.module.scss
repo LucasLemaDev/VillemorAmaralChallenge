@@ -1,12 +1,28 @@
 .link{
-  color: #d8c1a7;
   display: flex;
   align-items: center;
   gap: .5rem;
   font-Size: 2rem;
   font-Weight: bold;
+
   &:hover {
-      text-shadow: 0 0 2px rgba(255, 255, 255, 0.747);
-      color: #ffffff;
+
+    &::after{
+      width: 63%;
     }
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.842);
+  }
+
+  &::after{
+    content: '';
+    background-color: #7c969f;
+    border-radius: 20px;
+    height: .125rem;
+    width: 0;
+    position: absolute;
+    bottom: 25%;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.849);
+    transition: .3s ease-in;
+  }
+
 }

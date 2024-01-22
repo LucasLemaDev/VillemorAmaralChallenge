@@ -2,13 +2,24 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: #7c969f;
 }
-header a:hover{
-  color: var(--mantine-color-yellow-3);
+
+header {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  a{
+    color: #395f6e;
+    
+  }
+  div{
+    color: #d8c1a7;
+  }
 }
 
 a {
-  color: #f7ece0;
   text-decoration: none;
   transition: .3s ease;
 }
